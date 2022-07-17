@@ -1,0 +1,45 @@
+{
+    "name": "jestguide.com",
+    "version": "0.0.1",
+    "description": "Jest Testing Guide",
+    "scripts": {
+        "dev": "rimraf dist && npx @11ty/eleventy --serve & npx tailwindcss -i src/css/tailwind.css -o dist/style.css -w",
+        "build": "rimraf dist && ELEVENTY_PRODUCTION=true npx @11ty/eleventy && NODE_ENV=production npx tailwindcss -i src/css/tailwind.css -o dist/style.css --minify"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/garrettbland/jestguide.com.git"
+    },
+    "keywords": [
+        "jest",
+        "testing",
+        "unit",
+        "guide",
+        "test"
+    ],
+    "author": "Garrett Bland",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/garrettbland/jestguide.com/issues"
+    },
+    "prettier": {
+        "semi": false,
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 70,
+        "tabWidth": 4,
+        "useTabs": false,
+        "bracketSpacing": true
+    },
+    "homepage": "https://jestguide.com",
+    "devDependencies": {
+        "@garrettbland/img-alt-tag-check": "^0.0.4",
+        "@garrettbland/lazy-load-images": "^0.0.6",
+        "alpinejs": "^3.10.2",
+        "eleventy-plugin-error-overlay": "^1.0.0",
+        "html-minifier": "^4.0.0",
+        "prettier": "^2.7.1",
+        "rimraf": "^3.0.2",
+        "tailwindcss": "^3.1.6"
+    }
+}
