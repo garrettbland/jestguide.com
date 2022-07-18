@@ -6,5 +6,6 @@ module.exports = function () {
     return {
         title: 'Jest Testing Guide',
         hostname: 'https://jestguide.com',
+        git_repo: 'https://github.com/garrettbland/jestguide.com',
     }
 }

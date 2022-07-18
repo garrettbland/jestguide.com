@@ -4,3 +4,11 @@
 @tailwind utilities;
 
 /* Custom classes go below */
+
+a {
+    @apply hover:underline;
+}
+
+h1 {
+    @apply text-3xl font-bold text-blue-800;
+}

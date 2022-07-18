@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    {% include 'head.njk' %}
+    <body>
+        {% include 'navbar.njk' %}
+        {{ content | safe }}
+        {% include 'footer.njk' %}
+        <script defer src="/alpine.js?v={% version %}"></script>
+    </body>
+</html>

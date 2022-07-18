@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    {% include 'head.njk' %}
+    <body>
+        {% include 'navbar.njk' %}
+        <div class="flex flex-row">
+            {% include 'sidebar.njk' %}
+            <main class="flex-1 p-5">
+                <article>
+                    {{ content | safe }}
+                </article>
+            </main>
+        </div>
+        {% include 'footer.njk' %}
+        <script defer src="/alpine.js?v={% version %}"></script>
+    </body>
+</html>

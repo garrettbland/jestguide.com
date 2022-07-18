@@ -5,4 +5,4 @@
  * This is purely here to not have to type in the layout manually on each page
  */
 
-module.exports = 'layouts/base.njk'
+module.exports = 'documentation.njk'
