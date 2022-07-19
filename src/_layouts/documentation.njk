@@ -3,15 +3,15 @@
     {% include 'head.njk' %}
     <body>
         {% include 'navbar.njk' %}
-        <div class="flex flex-row">
+        <div class="relative z-20 flex flex-row overflow-hidden">
             {% include 'sidebar.njk' %}
-            <main class="flex-1 p-5">
-                <article>
+            <div class="flex-1">
+                <main class="relative z-20 ml-48 p-5">
                     {{ content | safe }}
-                </article>
-            </main>
+                </main>
+                {% include 'footer.njk' %}
+            </div>
         </div>
-        {% include 'footer.njk' %}
         <script defer src="/alpine.js?v={% version %}"></script>
     </body>
 </html>
